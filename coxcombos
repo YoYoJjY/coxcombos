@@ -21,15 +21,15 @@ tripoutButton.Parent = screenGui
 
 -- Create the "Anaconda2" button
 local anaconda2Button = Instance.new("TextButton")
-anaconda2Button.Name = "Anaconda2Button"
-anaconda2Button.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-anaconda2Button.Position = UDim2.new(1, -160, 0, 55)  -- Position it below the "Tripout" button
-anaconda2Button.Text = "Anaconda2"
-anaconda2Button.TextSize = 20  -- Smaller text size
-anaconda2Button.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
-anaconda2Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
-anaconda2Button.BackgroundTransparency = 0.3  -- Slight transparency to the background
-anaconda2Button.Parent = screenGui
+goku2Button.Name = "goku2Button"
+gokuButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+gokuButton.Position = UDim2.new(1, -160, 0, 55)  -- Position it below the "Tripout" button
+gokuButton.Text = "goku"
+gokuButton.TextSize = 20  -- Smaller text size
+gokuButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+gokuButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+gokuButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+gokuButton.Parent = screenGui
 
 -- Create the "Breakdown" button
 local breakdownButton = Instance.new("TextButton")
@@ -164,8 +164,8 @@ local function playAnimations()
     animationTrack3:AdjustSpeed(1) -- Freeze animation 3
 end
 
--- Function to trigger the "Anaconda2" hug animation
-local function playAnaconda2()
+-- Function to trigger the "goku" hug animation
+local function playgoku()
     local speaker = player  -- This is the player clicking the button
     local hitAnim = Instance.new("Animation")
 
