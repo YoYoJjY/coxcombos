@@ -19,7 +19,7 @@ tripoutButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 tripoutButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 tripoutButton.Parent = screenGui
 
--- Create the "Anaconda2" button
+-- Create the "goku" button
 local gokuButton = Instance.new("TextButton")
 gokuButton.Name = "gokuButton"
 gokuButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
@@ -35,7 +35,7 @@ gokuButton.Parent = screenGui
 local shootButton = Instance.new("TextButton")
 shootButton.Name = "shootButton"
 shootButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-shootButton.Position = UDim2.new(1, -160, 0, 100)  -- Position below "Anaconda2"
+shootButton.Position = UDim2.new(1, -160, 0, 100)  -- Position below "goku"
 shootButton.Text = "shoot/aimgun"
 shootButton.TextSize = 20  -- Smaller text size
 shootButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -47,7 +47,7 @@ shootButton.Parent = screenGui
 local reloadgunButton = Instance.new("TextButton")
 reloadgunButton.Name = "reloadgunButton"
 reloadgunButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-reloadgunButton.Position = UDim2.new(1, -160, 0, 145)  -- Position below "reloadgun"
+reloadgunButton.Position = UDim2.new(1, -160, 0, 145)  -- Position below "shoot/aimgun"
 reloadgunButton.Text = "reloadgun"
 reloadgunButton.TextSize = 20  -- Smaller text size
 reloadgunButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -59,7 +59,7 @@ reloadgunButton.Parent = screenGui
 local hostageButton = Instance.new("TextButton")
 hostageButton.Name = "hostageButton"
 hostageButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-hostageButton.Position = UDim2.new(1, -160, 0, 190)  -- Position below "hostage"
+hostageButton.Position = UDim2.new(1, -160, 0, 190)  -- Position below "reloadgun"
 hostageButton.Text = "hostage"
 hostageButton.TextSize = 20  -- Smaller text size
 hostageButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -71,7 +71,7 @@ hostageButton.Parent = screenGui
 local ohyeah4Button = Instance.new("TextButton")
 ohyeah4Button.Name = "ohyeah4Button"
 ohyeah4Button.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-ohyeah4Button.Position = UDim2.new(1, -160, 0, 235)  -- Position below "ohyeah4"
+ohyeah4Button.Position = UDim2.new(1, -160, 0, 235)  -- Position below "hostage"
 ohyeah4Button.Text = "ohyeah4"
 ohyeah4Button.TextSize = 20  -- Smaller text size
 ohyeah4Button.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -83,7 +83,7 @@ ohyeah4Button.Parent = screenGui
 local sleepButton = Instance.new("TextButton")
 sleepButton.Name = "sleepButton"
 sleepButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-sleepButton.Position = UDim2.new(1, -160, 0, 280)  -- Position below "sleep
+sleepButton.Position = UDim2.new(1, -160, 0, 280)  -- Position below "ohyeah4"
 sleepButton.Text = "sleep"
 sleepButton.TextSize = 20  -- Smaller text size
 sleepButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -143,7 +143,7 @@ wheelieButton.Parent = screenGui
 local victoryButton = Instance.new("TextButton")
 victoryButton.Name = "victoryButton"
 victoryButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-victoryButton.Position = UDim2.new(1, -160, 0, 505)  -- Position below "victory"
+victoryButton.Position = UDim2.new(1, -160, 0, 505)  -- Position below "wheelie"
 victoryButton.Text = "victory"
 victoryButton.TextSize = 20  -- Smaller text size
 victoryButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -151,17 +151,66 @@ victoryButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 victoryButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 victoryButton.Parent = screenGui
 
+-- Create the "robot" button
+local robotButton = Instance.new("TextButton")
+robotButton.Name = "robotButton"
+robotButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+robotButton.Position = UDim2.new(1, -160, 0, 550)  -- Position below "victory"
+robotButton.Text = "robot"
+robotButton.TextSize = 20  -- Smaller text size
+robotButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+robotButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+robotButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+robotButton.Parent = screenGui
+
+-- Create the "BoneDance" button
+local boneDanceButton = Instance.new("TextButton")
+boneDanceButton.Name = "boneDanceButton"
+boneDanceButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+boneDanceButton.Position = UDim2.new(1, -160, 0, 595)  -- Position below "robot"
+boneDanceButton.Text = "BoneDance"
+boneDanceButton.TextSize = 20  -- Smaller text size
+boneDanceButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+boneDanceButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+boneDanceButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+boneDanceButton.Parent = screenGui
+
+-- Create the "TWICEFancyDance" button
+local TWICEFancyDanceButton = Instance.new("TextButton")
+TWICEFancyDanceButton.Name = "TWICEFancyDanceButton"
+TWICEFancyDanceButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+TWICEFancyDanceButton.Position = UDim2.new(1, -160, 0, 640)  -- Position below "BoneDance"
+TWICEFancyDanceButton.Text = "TWICEFancyDance"
+TWICEFancyDanceButton.TextSize = 20  -- Smaller text size
+TWICEFancyDanceButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+TWICEFancyDanceButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+TWICEFancyDanceButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+TWICEFancyDanceButton.Parent = screenGui
+
+-- Create the "spinMove" button
+local spinMoveButton = Instance.new("TextButton")
+spinMoveButton.Name = "spinMoveButton"
+spinMoveButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+spinMoveButton.Position = UDim2.new(1, -160, 0, 685)  -- Position below "TWICEFancyDance"
+spinMoveButton.Text = "spinMove"
+spinMoveButton.TextSize = 20  -- Smaller text size
+spinMoveButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+spinMoveButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+spinMoveButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+spinMoveButton.Parent = screenGui
+
 -- Create the "StopAnim" button
 local stopAnimButton = Instance.new("TextButton")
 stopAnimButton.Name = "StopAnimButton"
 stopAnimButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-stopAnimButton.Position = UDim2.new(1, -160, 0, 550)  -- Position below "wheelie"
+stopAnimButton.Position = UDim2.new(1, -160, 0, 730)  -- Position below "spinmove"
 stopAnimButton.Text = "StopAnim"
 stopAnimButton.TextSize = 20  -- Smaller text size
 stopAnimButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
 stopAnimButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 stopAnimButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 stopAnimButton.Parent = screenGui
+
 
 
 -- Declare a variable to track the current animation state
@@ -395,7 +444,7 @@ local function playcrawl()
 
     hitAnim.AnimationId = "rbxassetid://16738332169"  -- crawl animation ID
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
-    hit:Play(0.1, 1, 0)  -- Play the animation with a slight delay
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
     hit.TimePosition = 1  -- Set the animation start position
 end
 
@@ -433,6 +482,91 @@ local function playvictory()
     hit.TimePosition = 1  -- Set the animation start position
 end
 
+-- Function to trigger the "robot" hug animation
+local function playrobot()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://10714392151"  -- robot animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
+end
+
+-- Function to trigger the "bonedance" hug animation
+local function playbonedance()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://15122972413"  -- bonedance animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 6.7  -- Set the animation start position
+end
+
+-- Function to trigger the "BoneDance" animation
+local function playBoneDance()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://15122972413"  -- BoneDance animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 6.7  -- Set the animation start position
+end
+
+-- Function to trigger the "TWICEFancyDance" animation
+local function playTWICEFancyDance()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://13520524517"  -- TWICEFancyDance animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
+end
+
+-- Function to trigger the "spinmove" animation
+local function playSpinMove()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://10714007154"  -- SpinMove animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
+    hit.TimePosition = 5  -- Set the animation start position
+end
+
 -- Function to stop any playing animations
 local function stopAnimations()
     local character = player.Character or player.CharacterAdded:Wait()
@@ -465,3 +599,7 @@ darkvaderButton.MouseButton1Click:Connect(playdarkvader)
 crawlButton.MouseButton1Click:Connect(playcrawl)
 wheelieButton.MouseButton1Click:Connect(playwheelie)
 victoryButton.MouseButton1Click:Connect(playvictory)
+robotButton.MouseButton1Click:Connect(playrobot)
+boneDanceButton.MouseButton1Click:Connect(playBoneDance)
+TWICEFancyDanceButton.MouseButton1Click:Connect(playTWICEFancyDance)
+spinMoveButton.MouseButton1Click:Connect(playSpinMove)
