@@ -43,53 +43,53 @@ breakdownButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 breakdownButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 breakdownButton.Parent = screenGui
 
--- Create the "Freeflow" button
-local freeflowButton = Instance.new("TextButton")
-freeflowButton.Name = "FreeflowButton"
-freeflowButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-freeflowButton.Position = UDim2.new(1, -160, 0, 145)  -- Position below "Breakdown"
-freeflowButton.Text = "Freeflow"
-freeflowButton.TextSize = 20  -- Smaller text size
-freeflowButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
-freeflowButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
-freeflowButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
-freeflowButton.Parent = screenGui
+-- Create the "reloadgun" button
+local reloadgunButton = Instance.new("TextButton")
+reloadgunButton.Name = "reloadgunButton"
+reloadgunButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+reloadgunButton.Position = UDim2.new(1, -160, 0, 145)  -- Position below "reloadgun"
+reloadgunButton.Text = "reloadgun"
+reloadgunButton.TextSize = 20  -- Smaller text size
+reloadgunButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+reloadgunButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+reloadgunButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+reloadgunButton.Parent = screenGui
 
--- Create the "Beggin" button
-local begginButton = Instance.new("TextButton")
-begginButton.Name = "BegginButton"
-begginButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-begginButton.Position = UDim2.new(1, -160, 0, 190)  -- Position below "Freeflow"
-begginButton.Text = "Beggin"
-begginButton.TextSize = 20  -- Smaller text size
-begginButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
-begginButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
-begginButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
-begginButton.Parent = screenGui
+-- Create the "hostage" button
+local hostageButton = Instance.new("TextButton")
+hostageButton.Name = "hostageButton"
+hostageButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+hostageButton.Position = UDim2.new(1, -160, 0, 190)  -- Position below "hostage"
+hostageButton.Text = "hostage"
+hostageButton.TextSize = 20  -- Smaller text size
+hostageButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+hostageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+hostageButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+hostageButton.Parent = screenGui
 
--- Create the "Calamity" button
-local CalamityButton = Instance.new("TextButton")
-CalamityButton.Name = "CalamityButton"
-CalamityButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-CalamityButton.Position = UDim2.new(1, -160, 0, 235)  -- Position below "Calamity"
-CalamityButton.Text = "Calamity"
-CalamityButton.TextSize = 20  -- Smaller text size
-CalamityButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
-CalamityButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
-CalamityButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
-CalamityButton.Parent = screenGui
+-- Create the "ohyeah4" button
+local ohyeah4Button = Instance.new("TextButton")
+ohyeah4Button.Name = "ohyeah4Button"
+ohyeah4Button.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+ohyeah4Button.Position = UDim2.new(1, -160, 0, 235)  -- Position below "ohyeah4"
+ohyeah4Button.Text = "ohyeah4"
+ohyeah4Button.TextSize = 20  -- Smaller text size
+ohyeah4Button.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+ohyeah4Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+ohyeah4Button.BackgroundTransparency = 0.3  -- Slight transparency to the background
+ohyeah4Button.Parent = screenGui
 
--- Create the "Climb" button
-local ClimbButton = Instance.new("TextButton")
-ClimbButton.Name = "ClimbButton"
-ClimbButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-ClimbButton.Position = UDim2.new(1, -160, 0, 280)  -- Position below "Climb
-ClimbButton.Text = "Climb"
-ClimbButton.TextSize = 20  -- Smaller text size
-ClimbButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
-ClimbButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
-ClimbButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
-ClimbButton.Parent = screenGui
+-- Create the "sleep" button
+local sleepButton = Instance.new("TextButton")
+sleepButton.Name = "sleepButton"
+sleepButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+sleepButton.Position = UDim2.new(1, -160, 0, 280)  -- Position below "sleep
+sleepButton.Text = "sleep"
+sleepButton.TextSize = 20  -- Smaller text size
+sleepButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+sleepButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+sleepButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+sleepButton.Parent = screenGui
 
 -- Create the "StopAnim" button
 local stopAnimButton = Instance.new("TextButton")
@@ -177,8 +177,8 @@ local function playgoku()
 
     hitAnim.AnimationId = "rbxassetid://10714389396"  -- Hug animation ID
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
-    hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
-    hit.TimePosition = 0  -- Set the animation start position
+    hit:Play(0.1, 1, 0)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
 end
 
 -- Function to trigger the "Breakdown" hug animation
@@ -198,8 +198,8 @@ local function playBreakdown()
     hit.TimePosition = 0  -- Set the animation start position
 end
 
--- Function to trigger the "Freeflow" hug animation
-local function playFreeflow()
+-- Function to trigger the "reloadgun" hug animation
+local function playreloadgun()
     local speaker = player
     local hitAnim = Instance.new("Animation")
 
@@ -209,14 +209,31 @@ local function playFreeflow()
     end
     speaker.Character.Animate.Disabled = true
 
-    hitAnim.AnimationId = "rbxassetid://77953251488968"  -- Freeflow animation ID
+    hitAnim.AnimationId = "rbxassetid://3972131105"  -- reloadgun animation ID
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
-    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
     hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "hostage" hug animation
+local function playhostage()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://3101877315"  -- hostage animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 0)  -- Play the animation with a slight delay
+    hit.TimePosition = 0.5  -- Set the animation start position
 end
 
 -- Function to trigger the "Beggin" hug animation
-local function playBeggin()
+local function playohyeah4()
     local speaker = player
     local hitAnim = Instance.new("Animation")
 
@@ -226,14 +243,14 @@ local function playBeggin()
     end
     speaker.Character.Animate.Disabled = true
 
-    hitAnim.AnimationId = "rbxassetid://123332279844087"  -- Beggin animation ID
+    hitAnim.AnimationId = "rbxassetid://16270690701"  -- ohyeah4 animation ID
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
-    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
-    hit.TimePosition = 0  -- Set the animation start position
+    hit:Play(0.1, 1, 0)  -- Play the animation with a slight delay
+    hit.TimePosition = 6.6  -- Set the animation start position
 end
 
--- Function to trigger the "Beggin" hug animation
-local function playCalamity()
+-- Function to trigger the "sleep" hug animation
+local function playsleep()
     local speaker = player
     local hitAnim = Instance.new("Animation")
 
@@ -243,24 +260,7 @@ local function playCalamity()
     end
     speaker.Character.Animate.Disabled = true
 
-    hitAnim.AnimationId = "rbxassetid://90841854866960"  -- Calamity animation ID
-    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
-    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
-    hit.TimePosition = 0  -- Set the animation start position
-end
-
--- Function to trigger the "Climb" hug animation
-local function playClimb()
-    local speaker = player
-    local hitAnim = Instance.new("Animation")
-
-    -- Stop existing animations and disable the Animate script
-    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
-        track:Stop()
-    end
-    speaker.Character.Animate.Disabled = true
-
-    hitAnim.AnimationId = "rbxassetid://18537363391"  -- Climb animation ID
+    hitAnim.AnimationId = "rbxassetid://2695918332"  -- sleep animation ID
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
     hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
     hit.TimePosition = 6.3  -- Set the animation start position
@@ -288,8 +288,8 @@ end
 tripoutButton.MouseButton1Click:Connect(playAnimations)
 gokuButton.MouseButton1Click:Connect(playgoku)
 breakdownButton.MouseButton1Click:Connect(playBreakdown)
-freeflowButton.MouseButton1Click:Connect(playFreeflow)
-begginButton.MouseButton1Click:Connect(playBeggin)
-CalamityButton.MouseButton1Click:Connect(playCalamity)
-ClimbButton.MouseButton1Click:Connect(playClimb)
+reloadgunButton.MouseButton1Click:Connect(playreloadgun)
+hostageButton.MouseButton1Click:Connect(playhostage)
+ohyeah4Button.MouseButton1Click:Connect(playohyeah4)
+sleepButton.MouseButton1Click:Connect(playsleep)
 stopAnimButton.MouseButton1Click:Connect(stopAnimations)
