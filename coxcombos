@@ -20,8 +20,8 @@ tripoutButton.BackgroundTransparency = 0.3  -- Slight transparency to the backgr
 tripoutButton.Parent = screenGui
 
 -- Create the "Anaconda2" button
-local anaconda2Button = Instance.new("TextButton")
-goku2Button.Name = "goku2Button"
+local gokuButton = Instance.new("TextButton")
+gokuButton.Name = "gokuButton"
 gokuButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
 gokuButton.Position = UDim2.new(1, -160, 0, 55)  -- Position it below the "Tripout" button
 gokuButton.Text = "goku"
@@ -286,7 +286,7 @@ end
 
 -- Connect the button clicks to the respective functions
 tripoutButton.MouseButton1Click:Connect(playAnimations)
-anaconda2Button.MouseButton1Click:Connect(playAnaconda2)
+gokuButton.MouseButton1Click:Connect(playgoku)
 breakdownButton.MouseButton1Click:Connect(playBreakdown)
 freeflowButton.MouseButton1Click:Connect(playFreeflow)
 begginButton.MouseButton1Click:Connect(playBeggin)
