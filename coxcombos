@@ -175,7 +175,7 @@ local function playgoku()
     end
     speaker.Character.Animate.Disabled = true
 
-    hitAnim.AnimationId = "rbxassetid://15571450952"  -- Hug animation ID
+    hitAnim.AnimationId = "rbxassetid://10714389396"  -- Hug animation ID
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
     hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
     hit.TimePosition = 1  -- Set the animation start position
