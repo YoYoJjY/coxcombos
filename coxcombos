@@ -31,17 +31,17 @@ gokuButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 gokuButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 gokuButton.Parent = screenGui
 
--- Create the "Breakdown" button
-local breakdownButton = Instance.new("TextButton")
-breakdownButton.Name = "BreakdownButton"
-breakdownButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-breakdownButton.Position = UDim2.new(1, -160, 0, 100)  -- Position below "Anaconda2"
-breakdownButton.Text = "Breakdown"
-breakdownButton.TextSize = 20  -- Smaller text size
-breakdownButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
-breakdownButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
-breakdownButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
-breakdownButton.Parent = screenGui
+-- Create the "shoot/aimgun" button
+local shootButton = Instance.new("TextButton")
+shootButton.Name = "shootButton"
+shootButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+shootButton.Position = UDim2.new(1, -160, 0, 100)  -- Position below "Anaconda2"
+shootButton.Text = "shoot/aimgun"
+shootButton.TextSize = 20  -- Smaller text size
+shootButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+shootButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+shootButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+shootButton.Parent = screenGui
 
 -- Create the "reloadgun" button
 local reloadgunButton = Instance.new("TextButton")
@@ -91,17 +91,69 @@ sleepButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 sleepButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 sleepButton.Parent = screenGui
 
+-- Create the "heli" button
+local heliButton = Instance.new("TextButton")
+heliButton.Name = "heliButton"
+heliButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+heliButton.Position = UDim2.new(1, -160, 0, 325)  -- Position below "sleep"
+heliButton.Text = "heli"
+heliButton.TextSize = 20  -- Smaller text size
+heliButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+heliButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+heliButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+heliButton.Parent = screenGui
+
+-- Create the "darkvader" button
+local darkvaderButton = Instance.new("TextButton")
+darkvaderButton.Name = "darkvaderButton"
+darkvaderButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+darkvaderButton.Position = UDim2.new(1, -160, 0, 370)  -- Position below "heli"
+darkvaderButton.Text = "darkvader"
+darkvaderButton.TextSize = 20  -- Smaller text size
+darkvaderButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+darkvaderButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+darkvaderButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+darkvaderButton.Parent = screenGui
+
+-- Create the "crawl" button
+local crawlButton = Instance.new("TextButton")
+crawlButton.Name = "crawlButton"
+crawlButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+crawlButton.Position = UDim2.new(1, -160, 0, 415)  -- Position below "darkvader"
+crawlButton.Text = "crawl"
+crawlButton.TextSize = 20  -- Smaller text size
+crawlButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+crawlButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+crawlButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+crawlButton.Parent = screenGui
+
+-- Create the "wheelie" button
+local wheelieButton = Instance.new("TextButton")
+wheelieButton.Name = "wheelieButton"
+wheelieButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+wheelieButton.Position = UDim2.new(1, -160, 0, 460)  -- Position below "crawl"
+wheelieButton.Text = "wheelie"
+wheelieButton.TextSize = 20  -- Smaller text size
+wheelieButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+wheelieButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+wheelieButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+wheelieButton.Parent = screenGui
+
 -- Create the "StopAnim" button
 local stopAnimButton = Instance.new("TextButton")
 stopAnimButton.Name = "StopAnimButton"
 stopAnimButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-stopAnimButton.Position = UDim2.new(1, -160, 0, 325)  -- Position below "Climb"
+stopAnimButton.Position = UDim2.new(1, -160, 0, 505)  -- Position below "wheelie"
 stopAnimButton.Text = "StopAnim"
 stopAnimButton.TextSize = 20  -- Smaller text size
 stopAnimButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
 stopAnimButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 stopAnimButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 stopAnimButton.Parent = screenGui
+
+
+-- Declare a variable to track the current animation state
+local isFirstAnimation = true
 
 -- Function to trigger the "Tripout" animations
 local function playAnimations()
@@ -181,8 +233,8 @@ local function playgoku()
     hit.TimePosition = 1  -- Set the animation start position
 end
 
--- Function to trigger the "Breakdown" hug animation
-local function playBreakdown()
+-- Function to trigger the "shoot/aimgun" animation
+local function playShootAnim()
     local speaker = player
     local hitAnim = Instance.new("Animation")
 
@@ -192,10 +244,28 @@ local function playBreakdown()
     end
     speaker.Character.Animate.Disabled = true
 
-    hitAnim.AnimationId = "rbxassetid://83228837001135"  -- Breakdown animation ID
+    -- Toggle between the two animations
+    if isFirstAnimation then
+        -- Play the first animation
+        hitAnim.AnimationId = "rbxassetid://4713633512"  -- First animation ID
+        isFirstAnimation = false
+    else
+        -- Play the second animation
+        hitAnim.AnimationId = "rbxassetid://3972164452"  -- Second animation ID
+        isFirstAnimation = true
+    end
+
+    -- Load the animation
     local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
-    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
-    hit.TimePosition = 0  -- Set the animation start position
+
+    -- Set the animation properties for playback
+    if not isFirstAnimation then
+        hit.TimePosition = 2.8  -- Start the second animation at 2.8 seconds
+        hit:Play(0.1, 1, 2)  -- Play the second animation at 2x speed
+    else
+        hit.TimePosition = 2.8  -- Start the first animation at the beginning (0 seconds)
+        hit:Play(0.1, 1, 0)  -- Play the first animation at normal speed (1x)
+    end
 end
 
 -- Function to trigger the "reloadgun" hug animation
@@ -266,6 +336,74 @@ local function playsleep()
     hit.TimePosition = 6.3  -- Set the animation start position
 end
 
+-- Function to trigger the "heli" hug animation
+local function playheli()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://900850443"  -- heli animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 10)  -- Play the animation with a slight delay
+    hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "darkvader" hug animation
+local function playdarkvader()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://3101948279"  -- darkvader animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 2)  -- Play the animation with a slight delay
+    hit.TimePosition = 0  -- Set the animation start position
+end
+
+-- Function to trigger the "crawl" hug animation
+local function playcrawl()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://16738332169"  -- crawl animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 0)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
+end
+
+-- Function to trigger the "wheelie" hug animation
+local function playwheelie()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://3360694441"  -- wheelie animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 0)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
+end
+
 -- Function to stop any playing animations
 local function stopAnimations()
     local character = player.Character or player.CharacterAdded:Wait()
@@ -287,9 +425,13 @@ end
 -- Connect the button clicks to the respective functions
 tripoutButton.MouseButton1Click:Connect(playAnimations)
 gokuButton.MouseButton1Click:Connect(playgoku)
-breakdownButton.MouseButton1Click:Connect(playBreakdown)
+shootButton.MouseButton1Click:Connect(playShootAnim)
 reloadgunButton.MouseButton1Click:Connect(playreloadgun)
 hostageButton.MouseButton1Click:Connect(playhostage)
 ohyeah4Button.MouseButton1Click:Connect(playohyeah4)
 sleepButton.MouseButton1Click:Connect(playsleep)
 stopAnimButton.MouseButton1Click:Connect(stopAnimations)
+heliButton.MouseButton1Click:Connect(playheli)
+darkvaderButton.MouseButton1Click:Connect(playdarkvader)
+crawlButton.MouseButton1Click:Connect(playcrawl)
+wheelieButton.MouseButton1Click:Connect(playwheelie)
