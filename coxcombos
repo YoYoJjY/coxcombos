@@ -139,11 +139,23 @@ wheelieButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
 wheelieButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
 wheelieButton.Parent = screenGui
 
+-- Create the "victory" button
+local victoryButton = Instance.new("TextButton")
+victoryButton.Name = "victoryButton"
+victoryButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
+victoryButton.Position = UDim2.new(1, -160, 0, 505)  -- Position below "victory"
+victoryButton.Text = "victory"
+victoryButton.TextSize = 20  -- Smaller text size
+victoryButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
+victoryButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Black background
+victoryButton.BackgroundTransparency = 0.3  -- Slight transparency to the background
+victoryButton.Parent = screenGui
+
 -- Create the "StopAnim" button
 local stopAnimButton = Instance.new("TextButton")
 stopAnimButton.Name = "StopAnimButton"
 stopAnimButton.Size = UDim2.new(0, 150, 0, 40)  -- Smaller button size (width, height)
-stopAnimButton.Position = UDim2.new(1, -160, 0, 505)  -- Position below "wheelie"
+stopAnimButton.Position = UDim2.new(1, -160, 0, 550)  -- Position below "wheelie"
 stopAnimButton.Text = "StopAnim"
 stopAnimButton.TextSize = 20  -- Smaller text size
 stopAnimButton.TextColor3 = Color3.fromRGB(255, 255, 255)  -- White text
@@ -404,6 +416,23 @@ local function playwheelie()
     hit.TimePosition = 1  -- Set the animation start position
 end
 
+-- Function to trigger the "victory" hug animation
+local function playvictory()
+    local speaker = player
+    local hitAnim = Instance.new("Animation")
+
+    -- Stop existing animations and disable the Animate script
+    for i, track in pairs(speaker.Character.Humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+    speaker.Character.Animate.Disabled = true
+
+    hitAnim.AnimationId = "rbxassetid://10714171628"  -- victory animation ID
+    local hit = speaker.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(hitAnim)
+    hit:Play(0.1, 1, 1)  -- Play the animation with a slight delay
+    hit.TimePosition = 1  -- Set the animation start position
+end
+
 -- Function to stop any playing animations
 local function stopAnimations()
     local character = player.Character or player.CharacterAdded:Wait()
@@ -435,3 +464,4 @@ heliButton.MouseButton1Click:Connect(playheli)
 darkvaderButton.MouseButton1Click:Connect(playdarkvader)
 crawlButton.MouseButton1Click:Connect(playcrawl)
 wheelieButton.MouseButton1Click:Connect(playwheelie)
+victoryButton.MouseButton1Click:Connect(playvictory)
